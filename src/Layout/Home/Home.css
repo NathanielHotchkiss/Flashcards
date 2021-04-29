@@ -1,0 +1,22 @@
+body {
+  margin: 0;
+}
+
+.btn {
+  margin: 0.6rem 0.4rem;
+}
+
+.material-icons {
+  position: relative;
+  font-size: 1.3rem;
+  top: 3px;
+  margin: 0 0.4rem;
+}
+
+.card {
+  margin: 3vh 0;
+}
+
+small {
+  display: block;
+}
