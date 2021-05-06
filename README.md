@@ -1,7 +1,7 @@
 # Flashcards
 A flashcards application using React.
 
-![A screen shot of my Flashcards App](/public/images/Pomodoro.png "React Flashcards")
+![A screen shot of my Flashcards App](/img/home-page.png "React Flashcards Home Page")
 
 ## Link
 
