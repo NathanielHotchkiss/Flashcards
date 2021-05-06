@@ -16,6 +16,12 @@ A flashcards application using React.
 ### Create Card Page
 ![A screen shot of my Flashcards App](/img/add-card.png "React Flashcards Add Card Page")
 
+### View Deck Page
+![A screen shot of my Flashcards App](/img/view-page.png "React Flashcards View Deck Page")
+
+### Study Page
+![A screen shot of my Flashcards App](/img/study-page.png "React Flashcards Study Page")
+
 ## Technology
 
 Built with React  
