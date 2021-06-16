@@ -7,6 +7,18 @@ A flashcards application using React.
 
 This application was created to organize users study material with virtual flashcards. Users can create decks of cards for different topics to study. 
 
+### Create Deck
+![A screen shot of my Flashcards App](/img/create-deck.png "React Flashcards Create Deck Page")
+
+### Create Card
+![A screen shot of my Flashcards App](/img/add-card.png "React Flashcards Add Card Page")
+
+### View Deck
+![A screen shot of my Flashcards App](/img/view-page.png "React Flashcards View Deck Page")
+
+### Study
+![A screen shot of my Flashcards App](/img/study-page.png "React Flashcards Study Page")
+
 ## Features
 
 * Forms that allow you to:
@@ -24,16 +36,3 @@ This application was created to organize users study material with virtual flash
   * react-router
 * Bootstrap   
 * CSS
-
-### Create Deck
-![A screen shot of my Flashcards App](/img/create-deck.png "React Flashcards Create Deck Page")
-
-### Create Card
-![A screen shot of my Flashcards App](/img/add-card.png "React Flashcards Add Card Page")
-
-### View Deck
-![A screen shot of my Flashcards App](/img/view-page.png "React Flashcards View Deck Page")
-
-### Study
-![A screen shot of my Flashcards App](/img/study-page.png "React Flashcards Study Page")
-
