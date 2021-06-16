@@ -11,9 +11,9 @@ This application was created to organize users study material with virtual flash
 
 * Forms that allow you to:
   * Create a new deck
-  * Edit existing decks
+  * Edit/delete an existing deck
   * Create new cards
-  * Edit existing cards
+  * Edit/delete an existing card
 * Study view, which allows you to select which deck to study, and flip through the front and backs of cards.   
 
 ## Technologies
