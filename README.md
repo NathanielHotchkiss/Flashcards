@@ -23,6 +23,7 @@ This application was created to organize users study material with virtual flash
   * useEffect
   * react-router
 * Bootstrap   
+* CSS
 
 ### Create Deck
 ![A screen shot of my Flashcards App](/img/create-deck.png "React Flashcards Create Deck Page")
