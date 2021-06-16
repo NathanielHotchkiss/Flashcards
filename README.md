@@ -3,7 +3,7 @@ A flashcards application using React.
 
 ![A screen shot of my Flashcards App](/img/home-page.png "React Flashcards Home Page")
 
-## Use
+## Uses
 
 This application was created to organize users study material with virtual flashcards. Users can create decks of cards for different topics to study. 
 
