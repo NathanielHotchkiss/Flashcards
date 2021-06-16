@@ -34,6 +34,6 @@ This application was created to organize users study material with virtual flash
 ### View Deck
 ![A screen shot of my Flashcards App](/img/view-page.png "React Flashcards View Deck Page")
 
-### Study Page
+### Study
 ![A screen shot of my Flashcards App](/img/study-page.png "React Flashcards Study Page")
 
