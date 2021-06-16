@@ -24,13 +24,13 @@ This application was created to organize users study material with virtual flash
   * react-router
 * Bootstrap   
 
-### Create Deck Page
+### Create Deck
 ![A screen shot of my Flashcards App](/img/create-deck.png "React Flashcards Create Deck Page")
 
-### Create Card Page
+### Create Card
 ![A screen shot of my Flashcards App](/img/add-card.png "React Flashcards Add Card Page")
 
-### View Deck Page
+### View Deck
 ![A screen shot of my Flashcards App](/img/view-page.png "React Flashcards View Deck Page")
 
 ### Study Page
