@@ -3,10 +3,9 @@ A flashcards application using React.
 
 ![A screen shot of my Flashcards App](/img/home-page.png "React Flashcards Home Page")
 
-## Link
+## Use
 
-- not ready
-
+This application was created to organize users study material with virtual flashcards. Users can create decks of cards for different topics to study. 
 
 ## Features
 
@@ -22,7 +21,20 @@ A flashcards application using React.
 ### Study Page
 ![A screen shot of my Flashcards App](/img/study-page.png "React Flashcards Study Page")
 
-## Technology
+## Features
 
-Built with React  
-Styled with Bootstrap 4
+* Forms that allow you to:
+  * Create a new deck
+  * Edit existing decks
+  * Create new cards
+  * Edit existing cards
+* Study view, which allows you to select which deck to study, and flip through the front and backs of cards.   
+
+## Technologies
+
+* React
+  * useState
+  * useEffect
+  * react-router
+* Bootstrap   
+
