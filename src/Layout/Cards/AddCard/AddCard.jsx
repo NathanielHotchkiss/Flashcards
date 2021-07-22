@@ -1,17 +1,13 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { Link, useParams, useRouteMatch } from "react-router-dom";
 import { createCard, readDeck } from "../../../utils/api";
 import CardForm from "../../Form/CardForm";
-
-/* - - - - - - - - - - - - - - - - - - - - - - */
 
 export default function AddCard({ setUpdated }) {
   const { deckId } = useParams();
   const [deck, setDeck] = useState([]);
   const [card, setCard] = useState({ front: "", back: "" });
   const { url } = useRouteMatch();
-
-  /* - - - - - - - - - - - - - - - - - - - - - - */
 
   useEffect(() => {
     async function getDeck() {
@@ -25,13 +21,9 @@ export default function AddCard({ setUpdated }) {
     getDeck();
   }, [deckId]);
 
-  /* - - - - - - - - - - - - - - - - - - - - - - */
-
   const handleChange = ({ target }) => {
     setCard({ ...card, [target.name]: target.value });
   };
-
-  /* - - - - - - - - - - - - - - - - - - - - - - */
 
   const handleSubmit = async (event) => {
     event.preventDefault();
@@ -48,8 +40,6 @@ export default function AddCard({ setUpdated }) {
     }
     setCard({ front: "", back: "" });
   };
-
-  /* - - - - - - - - - - - - - - - - - - - - - - */
 
   return (
     <div className="container">

@@ -1,14 +1,9 @@
-import React from "react";
 import { Link, useHistory } from "react-router-dom";
 import { deleteDeck } from "../../utils/api";
 import "./Home.css";
 
-/* - - - - - - - - - - - - - - - - - - - - - - */
-
 export default function Home({ decks, setUpdated }) {
   const history = useHistory();
-
-  /* - - - - - - - - - - - - - - - - - - - - - - */
 
   const handleDeckDelete = async (deckId) => {
     const result = window.confirm(
@@ -31,8 +26,6 @@ export default function Home({ decks, setUpdated }) {
       deleteData();
     }
   };
-
-  /* - - - - - - - - - - - - - - - - - - - - - - */
 
   let deckRender = decks.map((deck, index) => (
     <div className="card" key={index}>
@@ -60,8 +53,6 @@ export default function Home({ decks, setUpdated }) {
       </div>
     </div>
   ));
-
-  /* - - - - - - - - - - - - - - - - - - - - - - */
 
   return (
     <>

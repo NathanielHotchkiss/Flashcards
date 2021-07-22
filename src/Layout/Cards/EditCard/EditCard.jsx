@@ -3,16 +3,12 @@ import { readDeck, updateCard, readCard } from "../../../utils/api";
 import { useEffect, useState } from "react";
 import CardForm from "../../Form/CardForm";
 
-/* - - - - - - - - - - - - - - - - - - - - - - */
-
 export default function EditCard({ setUpdated }) {
   const { deckId, cardId } = useParams();
   const [deck, setDeck] = useState([]);
   const [card, setCard] = useState({ front: "", back: "" });
   const { url } = useRouteMatch();
   const history = useHistory();
-
-  /* - - - - - - - - - - - - - - - - - - - - - - */
 
   useEffect(() => {
     async function getDeck() {
@@ -26,8 +22,6 @@ export default function EditCard({ setUpdated }) {
     getDeck();
   }, [deckId]);
 
-  /* - - - - - - - - - - - - - - - - - - - - - - */
-
   useEffect(() => {
     async function ReadCard() {
       try {
@@ -40,16 +34,12 @@ export default function EditCard({ setUpdated }) {
     ReadCard();
   }, [cardId]);
 
-  /* - - - - - - - - - - - - - - - - - - - - - - */
-
   const handleChange = ({ target }) => {
     setCard({
       ...card,
       [target.name]: target.value,
     });
   };
-
-  /* - - - - - - - - - - - - - - - - - - - - - - */
 
   const handleSubmit = (event) => {
     event.preventDefault();
@@ -66,8 +56,6 @@ export default function EditCard({ setUpdated }) {
     }
     history.push(`/decks/${deck.id}`);
   };
-
-  /* - - - - - - - - - - - - - - - - - - - - - - */
 
   return (
     <div className="container">

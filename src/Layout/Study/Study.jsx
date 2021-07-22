@@ -2,8 +2,6 @@ import { useRouteMatch, Link, useParams, useHistory } from "react-router-dom";
 import { useState, useEffect } from "react";
 import { readDeck } from "../../utils/api";
 
-/* - - - - - - - - - - - - - - - - - - - - - - */
-
 export default function Study() {
   const [deck, setDeck] = useState({ cards: [] });
   const [iterator, setIterator] = useState(0);
@@ -11,8 +9,6 @@ export default function Study() {
   const { url } = useRouteMatch();
   const { deckId } = useParams();
   const history = useHistory();
-
-  /* - - - - - - - - - - - - - - - - - - - - - - */
 
   useEffect(() => {
     async function LoadDeck() {
@@ -26,13 +22,9 @@ export default function Study() {
     LoadDeck();
   }, [deckId]);
 
-  /* - - - - - - - - - - - - - - - - - - - - - - */
-
   const clickHandler = () => {
     setFlipped((prev) => !prev);
   };
-
-  /* - - - - - - - - - - - - - - - - - - - - - - */
 
   const countHandler = () => {
     setIterator((prev) => prev + 1);
@@ -50,8 +42,6 @@ export default function Study() {
       }
     }
   };
-
-  /* - - - - - - - - - - - - - - - - - - - - - - */
 
   const cardsArray = deck.cards.map((card, index) => (
     <div className="card" key={index}>
@@ -77,8 +67,6 @@ export default function Study() {
     </div>
   ));
 
-  /* - - - - - - - - - - - - - - - - - - - - - - */
-
   if (cardsArray.length > 2) {
     return (
       <>
@@ -100,8 +88,6 @@ export default function Study() {
       </>
     );
   }
-
-  /* - - - - - - - - - - - - - - - - - - - - - - */
 
   return (
     <>

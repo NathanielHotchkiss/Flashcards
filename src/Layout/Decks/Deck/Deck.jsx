@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { Link, useParams, useHistory } from "react-router-dom";
 import {
   readDeck,
@@ -7,15 +7,11 @@ import {
   listCards,
 } from "../../../utils/api";
 
-/* - - - - - - - - - - - - - - - - - - - - - - */
-
 export default function Deck({ setUpdated }) {
   const [deck, setDeck] = useState({});
   const [cards, setCards] = useState([]);
   const history = useHistory();
   const { deckId } = useParams();
-
-  /* - - - - - - - - - - - - - - - - - - - - - - */
 
   useEffect(() => {
     async function LoadDeck() {
@@ -29,8 +25,6 @@ export default function Deck({ setUpdated }) {
     LoadDeck();
   }, [deckId]);
 
-  /* - - - - - - - - - - - - - - - - - - - - - - */
-
   useEffect(() => {
     async function getCards() {
       let result = await listCards(deckId);
@@ -38,8 +32,6 @@ export default function Deck({ setUpdated }) {
     }
     getCards();
   }, [deckId]);
-
-  /* - - - - - - - - - - - - - - - - - - - - - - */
 
   const handleDeckDelete = async (deckId) => {
     const result = window.confirm(
@@ -63,8 +55,6 @@ export default function Deck({ setUpdated }) {
     }
   };
 
-  /* - - - - - - - - - - - - - - - - - - - - - - */
-
   const handleCardDelete = async ({ target }) => {
     const value = target.value;
     const result = window.confirm(
@@ -85,8 +75,6 @@ export default function Deck({ setUpdated }) {
       deleteData();
     }
   };
-
-  /* - - - - - - - - - - - - - - - - - - - - - - */
 
   let deckRender = (
     <div className="card">
@@ -115,8 +103,6 @@ export default function Deck({ setUpdated }) {
       </div>
     </div>
   );
-
-  /* - - - - - - - - - - - - - - - - - - - - - - */
 
   let cardRender = cards.map((card, index) => (
     <div className="card" key={index}>
@@ -149,8 +135,6 @@ export default function Deck({ setUpdated }) {
       </div>
     </div>
   ));
-
-  /* - - - - - - - - - - - - - - - - - - - - - - */
 
   return (
     <>

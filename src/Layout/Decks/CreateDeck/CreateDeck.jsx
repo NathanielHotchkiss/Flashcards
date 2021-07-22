@@ -4,20 +4,14 @@ import { createDeck } from "../../../utils/api";
 import DeckForm from "../../Form/DeckForm";
 import "./CreateDeck.css";
 
-/* - - - - - - - - - - - - - - - - - - - - - - */
-
 export default function CreateDeck({ decks, setUpdated }) {
   const { url } = useRouteMatch();
   const [deck, setDeck] = useState({ name: "", description: "" });
   const history = useHistory();
 
-  /* - - - - - - - - - - - - - - - - - - - - - - */
-
   const handleChange = ({ target }) => {
     setDeck({ ...deck, [target.name]: target.value });
   };
-
-  /* - - - - - - - - - - - - - - - - - - - - - - */
 
   const handleSubmit = (event) => {
     event.preventDefault();
@@ -25,12 +19,10 @@ export default function CreateDeck({ decks, setUpdated }) {
       name: deck.name,
       description: deck.description,
     }).then((response) => {
-      setUpdated(result)
+      setUpdated(result);
       history.push(`/decks/${response.id}`);
     });
   };
-
-  /* - - - - - - - - - - - - - - - - - - - - - - */
 
   return (
     <div className="container">

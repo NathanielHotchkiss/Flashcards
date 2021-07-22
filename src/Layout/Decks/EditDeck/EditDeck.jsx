@@ -3,15 +3,11 @@ import { useState, useEffect } from "react";
 import { updateDeck, readDeck } from "../../../utils/api";
 import DeckForm from "../../Form/DeckForm";
 
-/* - - - - - - - - - - - - - - - - - - - - - - */
-
 export default function EditDeck({ decks, setUpdated }) {
   const { deckId } = useParams();
   const [deck, setDeck] = useState({ name: "", description: "" });
   const history = useHistory();
   const { url } = useRouteMatch();
-
-  /* - - - - - - - - - - - - - - - - - - - - - - */
 
   useEffect(() => {
     async function getDeck() {
@@ -25,16 +21,12 @@ export default function EditDeck({ decks, setUpdated }) {
     getDeck();
   }, [deckId]);
 
-  /* - - - - - - - - - - - - - - - - - - - - - - */
-
   const handleChange = ({ target }) => {
     setDeck({
       ...deck,
       [target.name]: target.value,
     });
   };
-
-  /* - - - - - - - - - - - - - - - - - - - - - - */
 
   const handleSubmit = (event) => {
     event.preventDefault();
@@ -52,8 +44,6 @@ export default function EditDeck({ decks, setUpdated }) {
     }
     history.push(`/decks/${deckId}`);
   };
-
-  /* - - - - - - - - - - - - - - - - - - - - - - */
 
   return (
     <div className="container">
